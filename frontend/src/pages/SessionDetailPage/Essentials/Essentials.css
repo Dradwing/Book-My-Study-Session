@@ -1,0 +1,198 @@
+/* SessionDetailEssential.css */
+
+.session-detail-container {
+    margin: 20px; /* Margin from all sides */
+    background-color: rgb(240, 56, 56); /* Theme background color */
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff; /* White text for contrast */
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Bottom shadow */
+  }
+  
+  .session-detail-essential {
+    display: flex;
+    justify-content: center; /* Centers the child elements horizontally */
+    align-items: center;
+    column-gap: 20px;
+  }
+  
+  .video-preview {
+    flex: 2;
+    margin-left:20px;
+    align-self: center;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  /* SessionDetailsEssentials.css */
+
+.session-details-container {
+  flex:3;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.session-preview {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.session-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.tutor-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tutor-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.tutor-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.tutor-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.tutor-bio {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.session-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.meta-item p {
+  margin-left: 8px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f43838; /* Theme color */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.session-price-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+}
+
+.rating-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f43838; /* Theme color */
+  margin-right: 5px;
+}
+
+.booking-info {
+  font-size: 0.9rem;
+  color: #777;
+  margin-left: 5px;
+}
+
+.book-now-button {
+  background-color: #f43838; /* Theme color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #d32e2e; /* Darker shade of theme color */
+}
+
+@media (max-width: 768px) {
+
+  .session-detail-essential {
+    flex-direction: column;
+  }
+  .session-meta {
+    flex-direction: column;
+  }
+
+  .meta-item {
+    margin-bottom: 10px;
+  }
+
+  .session-price-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .book-now-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}

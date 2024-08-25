@@ -1,0 +1,24 @@
+/* MostPopularStudySessions.css */
+
+.most-popular-study-sessions {
+    padding: 20px;
+    background-color: #f8f0f0; /* Light background color */
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .most-popular-study-sessions h2 {
+    font-size: 36px;
+    color: rgb(240, 56, 56); /* Same theme color as other sections */
+    margin-bottom: 20px;
+  }
+  
+  .session-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+
+  

@@ -6,6 +6,7 @@ const Session = require("./../models/sessionModel");
 const path = require("path");
 
 const getAllSessions = catchAsync(async (req, res, next) => {
+ 
   const features = new APIFeatures(Session.find(), req.query)
     .filter()
     .sorting()

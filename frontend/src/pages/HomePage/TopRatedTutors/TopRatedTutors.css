@@ -1,0 +1,88 @@
+.top-rated-tutors {
+    padding: 20px;
+    background-color:#f3d9d9; /* Light green background */
+    text-align: center;
+  }
+  
+  .top-rated-tutors h2 {
+    font-size: 36px;
+    color: rgb(240, 56, 56);
+    margin-bottom: 20px;
+  }
+  
+  .tutor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tutor-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .tutor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .tutor-image-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tutor-info-card {
+    padding: 20px;
+    padding-top: 5px;
+  }
+  
+  .tutor-name-card {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(240, 56, 56);
+    margin: 0;
+  }
+  
+  .tutor-subject-card {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .tutor-stats-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item-tutor-card {
+    display: flex;
+    align-items: center;
+    color:  rgb(240, 56, 56);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item-tutor-card svg {
+    margin-right: 5px;
+  }
+  
+  .star-rating-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .tutor-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}

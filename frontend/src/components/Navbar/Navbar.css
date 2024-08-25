@@ -1,0 +1,85 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .navbar-brand {
+    color: rgb(240,56,56);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(240,56,56);
+    font-size: 1rem;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-button {
+    padding: 5px 15px;
+    background-color: rgb(240,56,56);
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .signup-button:hover {
+    background-color: #900000;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .navbar-left, .navbar-right {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-right {
+      justify-content: flex-end;
+    }
+  
+    .navbar-links {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .navbar-links li {
+      margin: 5px 10px;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px;
+    }
+  }
+  

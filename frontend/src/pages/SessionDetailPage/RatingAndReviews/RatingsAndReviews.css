@@ -1,0 +1,162 @@
+/* RatingsAndReviews.css */
+
+.ratings-reviews-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows the sections to stack on smaller screens */
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Ratings Side Styling */
+.ratings-side {
+  width: 30%; /* Default width for larger screens */
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #f43838; /* Theme color */
+  margin-left: 10px;
+}
+
+.total-reviews {
+  font-size: 0.9rem; /* Smaller font size for reviews count */
+  color: #555; /* Dark color */
+  margin-left: 5px;
+}
+
+.rating-breakdown {
+  margin-top: 10px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar-background {
+  width: 60%;
+  height: 8px;
+  background-color: #fddede; /* Lighter red background for unfilled bars */
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #f43838; /* Filled bar color */
+  border-radius: 4px;
+}
+
+/* Reviews Side Styling */
+.reviews-side {
+  width: 70%; /* Default width for larger screens */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for reviews */
+  gap: 20px; /* Space between reviews */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.review-card {
+  background-color: white; /* Slightly off-white background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.student-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.review-details {
+  overflow: hidden;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.student-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.review-time {
+  color: #888;
+}
+
+.student-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.filled-star {
+  color: rgb(240, 56, 56); /* Theme color */
+}
+
+.empty-star {
+  color: #ddd;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.show-more {
+  color: #f43838; /* Theme color */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.show-all-reviews {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(240, 56, 56); /* Theme color */
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+  grid-column: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ratings-side {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+    border-right: none; /* Remove the border on smaller screens */
+    border-bottom: 2px solid #ddd; /* Add bottom border instead */
+  }
+
+  .reviews-side {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+    grid-template-columns: 1fr; /* Single column for reviews */
+  }
+
+  .show-all-reviews {
+    grid-column: 1; /* Align show all reviews button correctly */
+  }
+}

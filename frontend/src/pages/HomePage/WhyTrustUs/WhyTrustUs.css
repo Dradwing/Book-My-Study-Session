@@ -1,0 +1,79 @@
+/* WhyTrustUs.css */
+
+.why-trust-us {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #b50000;
+    margin-bottom: 40px;
+  }
+  
+  .trust-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .trust-point {
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .trust-point:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-container {
+    background-color: #b50000;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .trust-icon {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .trust-content {
+    padding: 0 10px;
+  }
+  
+  .trust-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .trust-description {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .trust-points {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trust-point {
+      max-width: 90%;
+    }
+  }
+  

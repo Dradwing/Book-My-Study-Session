@@ -10,7 +10,7 @@ sessionRouter.use(tutorAuthController.protect);
 
 sessionRouter.post("/createSession/",sessionController.createSession);
 sessionRouter
-  .route("/:sessionId")
+  .route("/session/:sessionId")
   .get(sessionController.getSession)
   .patch(sessionController.updateSession)
   .delete(sessionController.deleteSession);

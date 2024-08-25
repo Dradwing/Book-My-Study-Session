@@ -5,7 +5,7 @@ const app = require("./app");
 const mongoose = require("mongoose");
 
 //connection to database
-const DB = process.env.MONGO_URI;
+const DB ='mongodb+srv://9058139810ig:qSH5rAyQWyXEfwZN@cluster0.8lfddik.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const connectionParams = {
   useNewUrlParser: true,

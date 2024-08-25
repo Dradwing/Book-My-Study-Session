@@ -1,0 +1,39 @@
+.sorting-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sort-by-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sort-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .sort-select:focus {
+    border-color: #b50000;
+  }
+  
+  @media (max-width: 768px) {
+    .sorting-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .sort-by-text {
+      margin-bottom: 5px;
+    }
+  }
+  

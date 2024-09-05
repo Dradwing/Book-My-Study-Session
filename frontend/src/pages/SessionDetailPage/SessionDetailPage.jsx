@@ -22,7 +22,7 @@ function SessionDetailPage(){
     
     const fetchSession = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/api/v1/sessions/session/${initialSearchQuery}`);
+          const response = await axios.get(`/api/v1/sessions/session/${initialSearchQuery}/`);
           const data = response.data;
           console.log(JSON.stringify(data));
           setSession(data.data.session);

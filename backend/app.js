@@ -57,12 +57,6 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(express.json({ limit: "10kb" }));
 
-
-app.use(express.static(path.join(__dirname, "/frontend/build")));
-
-app.get("*", (req, res) =>
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
-);
 // checkout route
 app.post(
   "/webhook-checkout",
@@ -79,6 +73,12 @@ app.post(
  app.use("/api/v1/sessions", sessionRouter);
  app.use("/api/v1/bookings", bookingRouter);
 
+
+ app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.get("*", (req, res) =>
+  res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
+);
 
 
 //global errors handler
